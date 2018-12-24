@@ -8,13 +8,19 @@ body, html {
     color: #000;
     font-family: "Microsoft YaHei", "Helvetica Neue", Arial, HelveticaNeue, Helvetica-Neue, Helvetica, "BBAlpha Sans", sans-serif;
     /*font-size: 62.5%;*/
+    /* background: -webkit-radial-gradient(red, pink, rgb(171, 171, 241)); 
+  background: -o-radial-gradient(red, pink, rgb(171, 171, 241)); 
+  background: -moz-radial-gradient(red, pink, rgb(171, 171, 241)); 
+  background: radial-gradient(red, pink, rgb(171, 171, 241));  */
+  background: -webkit-radial-gradient(circle, red, pink, white); /* Safari 5.1 - 6.0 */
+    background: -o-radial-gradient(circle, red, pink, white); /* Opera 11.6 - 12.0 */
+    background: -moz-radial-gradient(circle, red, pink, white); /* Firefox 3.6 - 15 */
+    background: radial-gradient(circle, red, pink, white); /* 标准的语法（必须放在最后） */
 }
-
 body {
     padding: 0;
     margin: 0;
 }
-
 ul, ol, li, p, h1, h2, h3, h4, h5, h6, dl, dt, dd, form, input, i, textarea, td, th, em, i, b {
     padding: 0;
     margin: 0;
@@ -130,6 +136,10 @@ body {
     max-width: 750px;
     margin: 0 auto;
     overflow: hidden;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%)
 }
 
 @media only screen and (min-width:1001px) {
