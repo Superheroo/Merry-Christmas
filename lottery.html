@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>
+        抽奖中。。。
+    </title>
+    <meta name="viewport" content="user-scalable=no,width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" />
+    <link rel="stylesheet" type="text/css" href="./src/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="./src/css/swiper.css" />
+    <script type="text/javascript" src="./src/js/jquery1.42.min.js"></script>
+    <script src="./src/js/bddq.js"></script>
+</head>
+<body>
+    <div id="mWrap">
+        <header>
+            <!-- 转盘start -->
+                <div class="box bgyp" style="position: relative;">
+                    <!-- 规则 -->
+                    <!--
+                        <div class="rule">
+                            活动规则
+                        </div>
+                    -->
+                    <div class="ruleImg">
+                        <img src="https://ss0.bdstatic.com/9r-1bjml2gcT8tyhnq/isite/dongguan-dgh5page-e0caad934a41662334828918ea7b9199124a1f40/images/close2.png"
+                            class="closeImgSize" />
+                        <img src="https://ss0.bdstatic.com/9r-1bjml2gcT8tyhnq/isite/dongguan-dgh5page-e0caad934a41662334828918ea7b9199124a1f40/images/tankuang1.png"
+                            class="imgSize" />
+                    </div>
+                    <div class="ly-plate">
+                        <div class="lottery-star">
+                            <img src="https://ss0.bdstatic.com/9r-1bjml2gcT8tyhnq/isite/dongguan-dgh5page-e0caad934a41662334828918ea7b9199124a1f40/images/rotate-static.png"
+                                id="lotteryBtn" />
+                            <img src="./src/images/zhuanpan.png" id="yuanpan" />
+                        </div>
+                    </div>
+                </div>
+            <!-- 转盘end -->
+        </header>
+        <footer>
+            <!-- 中奖提示 -->
+            <div class="boxform box01 box" style="background: none">
+                <img src="https://ss0.bdstatic.com/9r-1bjml2gcT8tyhnq/isite/dongguan-dgh5page-e0caad934a41662334828918ea7b9199124a1f40/images/close2.png"
+                    class="clodeImg" />
+                <img src="./src/images/beizi.png" class="imgSize beizi" style="display: inline;" />
+                <img src="./src/images/kouhong.png" class="imgSize kouhong" style="display: none;" />
+                <!-- <form class="form-div" id="form1" style="position: absolute;left: 10%;bottom: 50px;width: 80%;">
+                    <div class="form-box form-box2">
+                        <div class="name">
+                            姓名：
+                        </div>
+                        <input type="text" class="input input1" id="inputmy2" placeholder="" maxlength="64" id="username1" />
+                    </div>
+                    <div class="form-box form-box2">
+                        <div class="name">
+                            电话：
+                        </div>
+                        <input type="tel" onkeyup="value=value.replace(/[^\d]/g,'')" class="input input2" id="tell2"
+                            placeholder="" maxlength="11" id="phone1" />
+                    </div>
+                    <div class="form1Btn" id="fBtn1" data-click="{&quot;type&quot;:&quot;book&quot;}">
+                        立即领取
+                    </div>
+                </form> -->
+            </div>
+            <!-- 弹框 -->
+            <div class="backBg">
+            </div>
+        </footer>
+    </div>
+    <script type="text/javascript" src="./src/js/jquery.SuperSlide.2.1.1.js"></script>
+    <script type="text/javascript">
+        jQuery(".txtScroll-top").slide({ titCell: ".hd ul", mainCell: ".bd ul", autoPage: true, effect: "top", autoPlay: true, vis: 5 });
+    </script>
+    <!-- <script src="./src/js/jq.js"></script> -->
+    <script src="./src/js/toast.js">
+    </script>
+    <script src="./src/js/swiper.js">
+    </script>
+    <!-- 圆盘 -->
+    <script type="text/javascript" src="./src/js/rotate.js">
+    </script>
+    <script type="text/javascript" src="./src/js/yuanpan.js">
+    </script>
+    <script type="./src/js/stat.js">
+        </script>
+    <script src="./src/js/form.js">
+    </script>
+    <script src="./src/js/wfbd.js"></script>
+</body>
+
+</html>
