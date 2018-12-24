@@ -3,15 +3,9 @@ var wyaward = "";
 var localshang = localStorage.getItem("keyshang"); //获取本地数据a
 var loaclaward = localStorage.getItem("keyaward"); //获取本地数据keyaward
 var aa = "";
-console.log(localshang)
-if (loaclaward == "二等奖 800元") {
-    $('.img100').show();
-    $('.img18').hide();
-} else if (loaclaward == "海参 5头") {
-    $('.img100').hide();
-    $('.img18').show();
-}
 $("#lotteryBtn").click(function() {
+    console.log(localshang)
+    localshang++
     if (localshang == 1 || shang == 1) {
         mToast("您还有最后1次机会");
         var num = parseInt(Math.random() * (100 - 0 + 0) + 0);
@@ -33,12 +27,12 @@ $("#lotteryBtn").click(function() {
         setTimeout(function() {
             alertshow1();
         }, 3000)
-    } else if (localshang > 10 || shang > 10) {
+    } else if (localshang > 1 || shang > 1) {
         mToast("机会已经用完了");
         return false;
     } else {
         var num = parseInt(Math.random() * (100 - 0 + 0) + 0);
-        console.log(num);
+        // console.log(num);
         if (num >= 0 && num < 50) {
             rotateFunc(1, -110, "二等奖 800元"); //
             var award2 = "二等奖 800元";
