@@ -1,24 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
 	<title>圣诞节快乐！</title>
 	<link rel="stylesheet" href="dist/css/app.css">
 	<style>
-	.lottery{
+		.lottery{
 		position: absolute;
-		top: 60%;
+		top: 65%;
 		left: 50%;
 		transform: translate(-50%,-50%);
 		background-color: pink;
 		color: white;
 		padding: 10px;
 		border-radius: 10px;
-		z-index: 99999
+		z-index: 99999;
+		box-shadow: 3px 3px rgb(128, 127, 127)
+	}
+	.protagonist{
+		position:relative;
+		top: 50%;
+		color: white;
+		line-height: 23px;
+		font-weight: bold;
+		padding: 0 10px
 	}
 	</style>
 </head>
+
 <body>
 	<section class="loading-mask">
 		<section class="loading">
@@ -57,15 +68,18 @@
 			<!-- end bag-panel -->
 			<i class="img-stars opacity0 animated j-stars"></i>
 			<i class="content-bg opacity0 animated j-bottomBg"></i>
-				<p style="text-align: center;position:relative;top: 50%;color: white">惠君，圣诞节快乐！嘻嘻~</p>
+			<!-- <p style="text-align: center;position:relative;top: 50%;color: white">惠君，圣诞快乐！嘻嘻~</p> -->
+			<p class="protagonist j-gift1 opacity0 animated">&emsp;&emsp;你是不是正等待着圣诞老人钻烟囱给你送圣诞节礼物啊?别再傻等了，今年他不会来了，因为去年他被你的袜子熏昏了,哈哈哈。惠君，圣诞快乐!</p>
 			<a class="lottery" href="lottery.html">戳我抽奖</a>
 		</section>
 		<!-- end content -->
 	</section>
-	<audio id="bgmusci" preload="load" loop="loop"><source src="main.mp3" type="audio/mpeg" /></audio>
+	<audio id="bgmusci" preload="load" loop="loop">
+		<source src="main.mp3" type="audio/mpeg" /></audio>
 	<script src="dist/js/app.js"></script>
 	<script>
-	ISPRO=true;
+		ISPRO = true;
 	</script>
 </body>
+
 </html>
